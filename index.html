@@ -83,6 +83,12 @@
       };
       document.body.appendChild(script);
     </script>
-  <input type="file">input</input>
+    <input type="file" name="somename" size="chars">
+    <button>Choose File</button>
+    <script>
+      $('button').click(function(){
+        $('input').click();
+      });
+      </script>
   </body>
 </html>
