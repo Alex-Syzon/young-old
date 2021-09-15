@@ -91,11 +91,11 @@
         height: 0;
       }
     </style>
-    <input type="file" name="somename" size="chars">
-    <button>Choose File</button>
+    <input id="TestInput" type="file" name="somename" size="chars">
+    <button id="testBtn">Choose File</button>
     <script>
-      ('button').click(function(){
-        ('input').click();
+      GetElementById("testBtn").click(function(){
+        GetElementById("TestInput").click();
       });
       </script>
   </body>
